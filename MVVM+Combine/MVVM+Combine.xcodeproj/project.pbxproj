@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AD722D028F6970E00468B04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD722CF28F6970E00468B04 /* User.swift */; };
+		1AD722D228F6972900468B04 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD722D128F6972900468B04 /* APIManager.swift */; };
+		1AD722D428F6976100468B04 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD722D328F6976100468B04 /* UserViewModel.swift */; };
 		1AEE641F28F5D73D005C1235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE641E28F5D73D005C1235 /* AppDelegate.swift */; };
 		1AEE642128F5D73E005C1235 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE642028F5D73E005C1235 /* SceneDelegate.swift */; };
 		1AEE642328F5D73E005C1235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE642228F5D73E005C1235 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AD722CF28F6970E00468B04 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1AD722D128F6972900468B04 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1AD722D328F6976100468B04 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1AEE641B28F5D73D005C1235 /* MVVM+Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE641E28F5D73D005C1235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AEE642028F5D73E005C1235 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AD722CB28F696B800468B04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AD722CF28F6970E00468B04 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AD722CC28F696BE00468B04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE642428F5D73E005C1235 /* Main.storyboard */,
+				1AEE642228F5D73E005C1235 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1AD722CD28F696C500468B04 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AD722D328F6976100468B04 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AD722CE28F696EF00468B04 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1AD722D128F6972900468B04 /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		1AEE641228F5D73D005C1235 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +95,12 @@
 		1AEE641D28F5D73D005C1235 /* MVVM+Combine */ = {
 			isa = PBXGroup;
 			children = (
+				1AD722CE28F696EF00468B04 /* Networking */,
+				1AD722CD28F696C500468B04 /* ViewModel */,
+				1AD722CC28F696BE00468B04 /* Views */,
+				1AD722CB28F696B800468B04 /* Model */,
 				1AEE641E28F5D73D005C1235 /* AppDelegate.swift */,
 				1AEE642028F5D73E005C1235 /* SceneDelegate.swift */,
-				1AEE642228F5D73E005C1235 /* ViewController.swift */,
-				1AEE642428F5D73E005C1235 /* Main.storyboard */,
 				1AEE642728F5D73F005C1235 /* Assets.xcassets */,
 				1AEE642928F5D73F005C1235 /* LaunchScreen.storyboard */,
 				1AEE642C28F5D73F005C1235 /* Info.plist */,
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD722D028F6970E00468B04 /* User.swift in Sources */,
+				1AD722D428F6976100468B04 /* UserViewModel.swift in Sources */,
 				1AEE642328F5D73E005C1235 /* ViewController.swift in Sources */,
+				1AD722D228F6972900468B04 /* APIManager.swift in Sources */,
 				1AEE641F28F5D73D005C1235 /* AppDelegate.swift in Sources */,
 				1AEE642128F5D73E005C1235 /* SceneDelegate.swift in Sources */,
 			);
